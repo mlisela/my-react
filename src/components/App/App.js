@@ -15,8 +15,8 @@ export class App extends Component {
           <Field />
         </div>
         <div className="Button-div">
-          <button>Start race</button>
-          <button>Reset race</button>
+          <button style={{backgroundColor: 'green'}} className="button">Start race</button>
+          <button style={{backgroundColor: 'red'}} className="button">Reset race</button>
         </div>
       </div>
     );

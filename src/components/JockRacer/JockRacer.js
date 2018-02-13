@@ -18,11 +18,12 @@ export class JockRacer extends Component {
         this.interval = setInterval(this.timer, this.state.interval);
 
     }
-    // <img src={this.props.jockey} alt="Horse jocky"/> <ProgressBar completed={this.state.progress} color={this.props.color}
+
     render() {
         return (
-            <div>
-
+            <div className="Jocky">
+                <img className="img" src={this.props.avatar} alt="Horse jocky"/>
+                 <ProgressBar completed={this.state.progress} color={this.props.color} />
             </div>
         );
     }

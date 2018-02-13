@@ -8,14 +8,15 @@ h1, h2 {
 
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+  height: 50px;
 }
 
 .App-header {
-  background-color: #014373;
+  background-color: #8f7e58;
   height: 100px;
-  padding: 30px;
+  padding: 10px;
   color: white;
+  margin-bottom: 0;
 }
 
 .App-title {
@@ -37,13 +38,15 @@ h1, h2 {
   height: 600px;
 }
 .Button-div {
-  background: burlywood;
-  height: 60px;
+  background:  #8f7e58;
+  height: 40px;
+  padding: 20px 20px 20px 20px;
 }
-.Button-div .button {
-  width: 20px;
-  margin: auto;
-  padding:20px;
+.button {
+  font-size: 20px;
+  border-radius: 8%;
+  padding: 10px 10px 10px 10px;
+  margin:0 10px 0 0;
 }
 
 @keyframes App-logo-spin {
