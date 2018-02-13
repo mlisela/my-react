@@ -13,8 +13,8 @@ h1, h2 {
 
 .App-header {
   background-color: #014373;
-  height: 160px;
-  padding: 20px;
+  height: 100px;
+  padding: 30px;
   color: white;
 }
 
@@ -30,6 +30,20 @@ h1, h2 {
 
 .App-intro {
   font-size: large;
+}
+.Race-field {
+  background: gray;
+  width: auto;
+  height: 600px;
+}
+.Button-div {
+  background: burlywood;
+  height: 60px;
+}
+.Button-div .button {
+  width: 20px;
+  margin: auto;
+  padding:20px;
 }
 
 @keyframes App-logo-spin {

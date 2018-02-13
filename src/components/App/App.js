@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import logo from '../../images/logo.svg';
 import './App.css';
+import { Field } from '../Field';
 
 export class App extends Component {
   render() {
@@ -8,12 +9,15 @@ export class App extends Component {
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-          <h2 className="App-sub-title">Kurtosys Grads</h2>
+          <h1 className="App-title">Welcome to React Horse Race Application</h1>
         </header>
-        <p className="App-intro">
-          To get started, edit <code>src/components/App/App.js</code> and save to reload.
-        </p>
+        <div className="Race-field ">
+          <Field />
+        </div>
+        <div className="Button-div">
+          <button>Start race</button>
+          <button>Reset race</button>
+        </div>
       </div>
     );
   }
