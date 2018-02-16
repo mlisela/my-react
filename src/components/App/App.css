@@ -4,6 +4,7 @@ h1, h2 {
 
 .App {
   text-align: center;
+  height: auto;
 }
 
 .App-logo {
@@ -16,7 +17,8 @@ h1, h2 {
   height: 100px;
   padding: 10px;
   color: white;
-  margin-bottom: 0;
+  margin-bottom: -10px;
+  height: 120px;
 }
 
 .App-title {
@@ -34,13 +36,13 @@ h1, h2 {
 }
 .Race-field {
   background: gray;
-  width: auto;
-  height: 600px;
+  width: 100%;
+  height: 700px;
 }
 .Button-div {
   background:  #8f7e58;
-  height: 40px;
-  padding: 20px 20px 20px 20px;
+  height: 100px;
+  padding: 20px 20px 30px 20px;
 }
 .button {
   font-size: 20px;
