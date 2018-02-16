@@ -17,13 +17,13 @@ export class JockRacer extends Component {
     timer = () => {
         this.setState({ progress: this.state.progress + 1 });
         (this.state.progress >= 99) ? this.setState({ progress: 100 }) : 0;
-        if(this.state.progress > 99 && this.state.count < 1){
+        if (this.state.progress > 99 && this.state.count < 1) {
             //noticed that this is applied to every JockRacer, researching on having a callback function on parent component
-            this.setState({count: this.state.count + 1});
-            for(let i = 0; i < 1; i++){
-                alert("In place number :" + this.state.count + " - " + this.props.login);
+            this.setState({ count: this.state.count + 1 });
+            for (let i = 0; i < 1; i++) {
+                alert("The winner is :" + this.props.login);
             }
-            //alert("The winner is :" + this.props.login);
+            //alert("In place number :" + this.state.count + " - " + this.props.login);
         }
 
     }
@@ -35,9 +35,9 @@ export class JockRacer extends Component {
     render() {
         return (
             <div className="Jocky">
-                <img className="img" src={this.props.avatar} alt="Horse jocky"/>
+                <img className="img" src={this.props.avatar} alt="Horse jocky" />
                 <h3 className="h3">{this.props.login}</h3>
-                 <ProgressBar finite="true" progress={this.state.progress} className="progressBar" completed={this.state.progress} color={this.props.color} />
+                <ProgressBar finite="true" progress={this.state.progress} className="progressBar" completed={this.state.progress} color={this.props.color} />
             </div>
         );
     }
