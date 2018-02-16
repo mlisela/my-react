@@ -18,7 +18,7 @@ export class JockRacer extends Component {
         this.setState({ progress: this.state.progress + 1 });
         (this.state.progress >= 99) ? this.setState({ progress: 100 }) : 0;
         if(this.state.progress > 99 && this.state.count < 1){
-            //this.state.count ++;
+            //noticed that this is applied to every JockRacer, researching on having a callback function on parent component
             this.setState({count: this.state.count + 1});
             for(let i = 0; i < 1; i++){
                 alert("In place number :" + this.state.count + " - " + this.props.login);
